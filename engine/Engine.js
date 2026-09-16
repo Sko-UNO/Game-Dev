@@ -20,6 +20,9 @@ class Engine{
 	static gameLoop(){
 		Engine.update()
 		Engine.draw()
+		
+		Time.update()
+		
 		requestAnimationFrame(Engine.gameLoop)
 	}
 	
