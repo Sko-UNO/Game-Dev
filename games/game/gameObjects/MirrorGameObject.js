@@ -2,8 +2,7 @@ class MirrorGameObject extends GameObject{
 	constructor(){
 		super("Mirror")
 		this.addComponent(new MirrorUpdateComponent())
-		this.addComponent(new GravityComponent())
-		this.addComponent(new Polygon(), {fillStyle:"Grey", points:[
+		this.addComponent(new Polygon(), {fillStyle:"Purple", points:[
 			new Vector2(0, -40),
 			new Vector2(-40, 0),
 			new Vector2(0, 40),

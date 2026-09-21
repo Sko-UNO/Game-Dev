@@ -1,0 +1,3 @@
+class SplitterController extends Component{
+	
+}

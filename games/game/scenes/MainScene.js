@@ -4,5 +4,6 @@ class MainScene extends Scene{
 		this.instantiate(new MainGameObject(), new Vector2(500, 100))
 		this.instantiate(new MirrorGameObject(), new Vector2(700, 100))
 		this.instantiate(new GroundGameObject(), new Vector2(0, 800))
+		this.instantiate(new SplitterGameObject(), new Vector2(575, 0))
 	}
 }

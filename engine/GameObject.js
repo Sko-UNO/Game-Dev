@@ -40,6 +40,10 @@ class GameObject{
 		this.markForDestroy = true
 	}
 	
+	getComponent(type){
+		return this.components.find(c=>c instanceof type)
+	}
+	
 	static find(name){
 		// if name matches, return it
 		return Engine.currentScene.gameObjects.find(go=>go.name == name)
