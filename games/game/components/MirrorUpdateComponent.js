@@ -1,18 +1,18 @@
 class MirrorUpdateComponent extends Component{
 	
+	speed = 200
+	
 	update(){
 		if(Input.keysDown.includes("ArrowRight"))
-			this.transform.position.x -= 5
+			this.transform.position.x -= Time.deltaTime * this.speed
 		if(Input.keysDown.includes("ArrowLeft"))
-			this.transform.position.x += 5
+			this.transform.position.x += Time.deltaTime * this.speed
 		if(Input.keysDown.includes("ArrowUp"))
-			this.transform.position.y -= 5
+			this.transform.position.y -= Time.deltaTime * this.speed * 1.5
+		
+		
 		
 	
-		}
-		if(this.transform.position.y <= 800)
-			this.transform.position.y += 1
-		
-
-		}
+	
+	}
 }

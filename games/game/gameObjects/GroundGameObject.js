@@ -1,6 +1,6 @@
 class GroundGameObject extends GameObject{
-	constructor("Main"){
-		super()
+	constructor(){
+		super("Main")
 		this.addComponent(new Polygon(), {fillStyle:"Green", points:[
 			new Vector2(0, 0),
 			new Vector2(2000, 0),

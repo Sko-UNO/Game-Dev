@@ -1,7 +1,8 @@
 class MainGameObject extends GameObject{
-	constructor("Main"){
-		super()
+	constructor(){
+		super("Main")
 		this.addComponent(new UpdateComponent())
+		this.addComponent(new GravityComponent())
 		this.addComponent(new Polygon(), {fillStyle:"black", points:[
 			new Vector2(0, -40),
 			new Vector2(-40, 0),
