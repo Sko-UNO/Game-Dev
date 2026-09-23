@@ -7,14 +7,15 @@ class LaserController extends Component{
 		}
 		
 		let myPosition = this.transform.position
-		let enemyGameObject = GameObject.find("Enemy")
-		if(enemyGameObject){
+		let enemyGameObjects = GameObject.findGameObjectsWithTag("Enemy")
+		for (const enemyGameObject of enemyGameObjects){
 			let enemyPosition = enemyGameObject.transform.position
 			let distance = myPosition.minus(enemyPosition).magnitude
 			if(distance < 20){
 				this.gameObject.destroy()
 				let healthComponent = enemyGameObject.getComponent(Health)
 				healthComponent.health --
+				Globals.points++
 			}
 		}
 		
