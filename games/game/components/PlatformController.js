@@ -1,0 +1,3 @@
+class PlatformController extends Component{
+	
+}

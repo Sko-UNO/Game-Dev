@@ -1,6 +1,7 @@
 class TextLabel extends Component{
 	fillStyle = "black"
 	text = "[BLANK]"
+	font = "10px Arial"
 	
 	draw(ctx){
 		let position = this.transform.position
@@ -16,6 +17,8 @@ class TextLabel extends Component{
 		
 		
 		ctx.fillStyle = this.fillStyle
+		
+		ctx.font = this.font
 		
 		ctx.fillText(this.text, 0, 0)
 		
