@@ -18,18 +18,22 @@
 		<script src="../../engine/Component.js"></script>
 		<script src="../../engine/GameObject.js"></script>
 		<script src="../../engine/Scene.js"></script>
+		<script src="../../engine/SceneManager.js"></script>
 		<script src="../../engine/Time.js"></script>
 		
 		<script src="../../engine/components/Transform.js"></script>
 		<script src="../../engine/components/Polygon.js"></script>
 		
-		<script src="./scenes/MainScene.js"></script>
+		<script src="./scenes/GenericLevel.js"></script>
+		<script src="./scenes/Level01.js"></script>
 		
+		<script src="./gameObjects/LevelControllerGameObject.js"></script>
 		<script src="./gameObjects/MainGameObject.js"></script>
 		<script src="./gameObjects/MirrorGameObject.js"></script>
 		<script src="./gameObjects/GroundGameObject.js"></script>
 		<script src="./gameObjects/SplitterGameObject.js"></script>
 		
+		<script src="./components/LevelController.js"></script>
 		<script src="./components/DrawComponent.js"></script>
 		<script src="./components/UpdateComponent.js"></script>
 		<script src="./components/MirrorUpdateComponent.js"></script>
@@ -38,8 +42,8 @@
 		   
 		   
 			
-			Engine.currentScene = new MainScene()
-			Engine.start()
+			
+			Engine.start(Level01)
 			
 		</script>
 	</body>

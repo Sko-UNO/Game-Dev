@@ -19,8 +19,9 @@ class UpdateComponent extends Component{
 			this.transform.position.y += this.gravity * Time.deltaTime * this.speed
 		}
 		
-		if(this.transform.position.y >= 600)
+		if(this.transform.position.y >= 600){
 			this.gravity = 0
-		
+			this.transform.position.y = 600
+		}
 	}
 }
