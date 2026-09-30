@@ -3,5 +3,6 @@ class GenericLevel extends Scene{
 		super()
 		this.instantiate(new MainGameObject(), new Vector2(500, 400))
 		this.instantiate(new PointsGameObject(), new Vector2(0, 20))
+		Camera.main.backgroundColor = "gray"
 	}
 }
