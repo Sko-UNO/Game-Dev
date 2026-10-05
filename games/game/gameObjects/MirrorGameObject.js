@@ -1,6 +1,6 @@
 class MirrorGameObject extends GameObject{
 	constructor(){
-		super("Mirror", ["Player"])
+		super("Mirror", ["Player"], "character")
 		this.addComponent(new MirrorUpdateComponent())
 		this.addComponent(new Polygon(), {fillStyle:"Purple", points:[
 			new Vector2(0, -20),

@@ -1,6 +1,6 @@
 class MainGameObject extends GameObject{
 	constructor(){
-		super("Main", ["Player"])
+		super("Main", ["Player"], "character")
 		this.addComponent(new UpdateComponent())
 		this.addComponent(new Polygon(), {fillStyle:"Gold", points:[
 			new Vector2(0, -20),

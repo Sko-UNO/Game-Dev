@@ -1,6 +1,6 @@
 class SplitterGameObject extends GameObject{
 	constructor(){
-		super("Splitter")
+		super("Splitter", [], "interactable")
 		this.addComponent(new Polygon(), {fillStyle:"Black", points:[
 			new Vector2(0, 0),
 			new Vector2(50, 0),
