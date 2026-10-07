@@ -24,6 +24,8 @@ class UpdateComponent extends Component{
 			if (Math.random() < .5)
 				laserGameObject.getComponent(Polygon).fillStyle = "blue"
 		}
+		//if(Input.keysDownThisFrame.includes("Space"))
+		//	instantiate(new LaserGameObject(), this.transform.position.clone())
 		
 		Camera.main.transform.position = this.transform.position.clone()
 	}
