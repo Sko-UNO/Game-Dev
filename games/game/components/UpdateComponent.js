@@ -9,7 +9,7 @@ class UpdateComponent extends Component{
 			this.transform.position.x += Time.deltaTime * this.speed
 		if(Input.keysDown.includes("ArrowLeft"))
 			this.transform.position.x -= Time.deltaTime * this.speed
-		if(Input.keysDown.includes("ArrowUp")){
+		if(Input.keysDownThisFrame.includes("ArrowUp")){
 			if(this.gravity == 0) 
 				this.gravity = -3
 			if(this.transform.position.x >= -55)
