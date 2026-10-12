@@ -4,7 +4,7 @@ class TimerController extends Component{
 	
 	update(){
 		this.seconds = Time.time % 60
-		this.minutes = Math.trunc(Time.time / 60)
+		this.minutes = Math.floor(Time.time / 60)
 		this.gameObject.getComponent(TextLabel).text = this.minutes + ":" + this.seconds.toFixed(2)
 	}
 }

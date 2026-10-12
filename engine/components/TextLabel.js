@@ -4,7 +4,7 @@ class TextLabel extends Component{
 	font = "10px Arial"
 	
 	draw(ctx){
-		let position = this.transform.position
+		//let position = this.transform.position
 			    
 		//open and close with ctx.save and cx.restore
 		ctx.save()
