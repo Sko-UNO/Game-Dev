@@ -24,7 +24,7 @@ class Input{
 	static mousedown(event){
 		if(!Input.mouseButtonsDown.includes(event.button)){
 			Input.mouseButtonsDown.push(event.button)
-			mouseButtonsDownThisFrame.push(event.button)
+			Input.mouseButtonsDownThisFrame.push(event.button)
 		}
 	}
 	
