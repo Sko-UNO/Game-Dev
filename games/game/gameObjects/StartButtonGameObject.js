@@ -7,6 +7,7 @@ class StartButtonGameObject extends GameObject{
 			new Vector2(300, 50),
 			new Vector2(300, 0)
 		]})
+		this.addComponent(new Collider())
 		this.addComponent(new StartButtonController())
 	}
 }
