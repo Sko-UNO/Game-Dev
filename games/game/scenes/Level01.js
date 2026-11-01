@@ -39,7 +39,6 @@ class Level01 extends Scene{
 			new Vector2(0, 10),
 		]
 		
-		
 		this.instantiate(new LevelControllerGameObject())
 	}
 }

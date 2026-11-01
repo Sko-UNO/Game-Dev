@@ -27,7 +27,8 @@ class UpdateComponent extends Component{
 		if(this.transform.position.x >= -55){
 			this.transform.position.x = -55
 		}
-		
+		if(Input.keysDownThisFrame.includes("l"))
+			SceneManager.loadScene(Level02)
 
 		this.gravity += .1
 		this.transform.position.y += this.gravity * Time.deltaTime * this.speed
