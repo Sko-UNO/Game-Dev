@@ -30,7 +30,7 @@ class Vector2{
 		return new Vector2(this.y, -this.x)
 	}
 	
-	normalize(){
+	normalized(){
 		return new Vector2(this.x/this.magnitude, this.y/this.magnitude)
 	}
 	
