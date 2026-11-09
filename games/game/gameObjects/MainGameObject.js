@@ -18,5 +18,7 @@ class MainGameObject extends GameObject{
 			new Vector2(0, 20),
 			new Vector2(20, 0)
 		]})
+		this.addComponent(new Collider())
+		this.addComponent(new RigidBody())
 	}
 }

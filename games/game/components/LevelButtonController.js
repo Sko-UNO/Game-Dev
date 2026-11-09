@@ -1,8 +1,10 @@
 class LevelButtonController extends Component{
-	lastFrameHover = false
 	hover = false
+	fixedUpdate(){
+		this.hover = false
+	}
 	update(){
-		if(this.lastFrameHover == true){
+		if(this.hover == true){
 			this.gameObject.getComponent(Polygon).fillStyle = "#aaaa"
 			if(Input.mouseButtonsUpThisFrame.includes(0)){
 				SceneManager.loadScene(Level02)
@@ -10,8 +12,6 @@ class LevelButtonController extends Component{
 		} else {
 			this.gameObject.getComponent(Polygon).fillStyle = "#ffff"
 		}
-		this.lastFrameHover = this.hover
-		this.hover = false
 	}
 	
 	onMouseOver(){

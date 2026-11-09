@@ -4,7 +4,10 @@ class UpdateComponent extends Component{
 	gravity = 0
 	speed = 200
 	
-	update(){
+	start(){
+		this.rigidBody = this.gameObject.getComponent(RigidBody)
+	}
+	fixedUpdate(){
 		if(Input.keysDown.includes("ArrowRight"))
 			this.transform.position.x += Time.deltaTime * this.speed
 		if(Input.keysDown.includes("ArrowLeft"))
@@ -22,11 +25,6 @@ class UpdateComponent extends Component{
 					this.counter = 0
 				}
 		}
-		
-		
-		if(this.transform.position.x >= -55){
-			this.transform.position.x = -55
-		}
 		if(Input.keysDownThisFrame.includes("l"))
 			SceneManager.loadScene(Level02)
 
@@ -36,7 +34,6 @@ class UpdateComponent extends Component{
 		
 		if(this.transform.position.y >= 700){
 			this.gravity = 0
-			this.transform.position.y = 700
 		}
 		
 		let platforms = GameObject.findGameObjectsWithTag("Platform")

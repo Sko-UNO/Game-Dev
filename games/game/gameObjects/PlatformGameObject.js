@@ -8,5 +8,6 @@ class PlatformGameObject extends GameObject{
 			new Vector2 (100, 100),
 			new Vector2 (0, 100),
 		]})
+		this.addComponent(new Collider())
 	}
 }

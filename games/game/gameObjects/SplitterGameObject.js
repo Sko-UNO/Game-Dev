@@ -7,6 +7,7 @@ class SplitterGameObject extends GameObject{
 			new Vector2(50, 1200),
 			new Vector2(0, 1200)
 		]})
+		this.addComponent(new Collider())
 		
 	}
 }

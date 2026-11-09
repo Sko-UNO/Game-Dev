@@ -7,5 +7,6 @@ class GroundGameObject extends GameObject{
 			new Vector2(window.innerWidth, 400),
 			new Vector2(-window.innerWidth, 400)
 		]})
+		this.addComponent(new Collider())
 	}
 }
