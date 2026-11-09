@@ -3,9 +3,10 @@ class MainMenu extends Scene{
 		super()
 		let titleScreen = new GameObject("TitleScreen", [], "UI")
 		titleScreen.addComponent(new TextLabel(), {fillStyle: "black", font:"100px Times"})
-		this.instantiate(titleScreen, new Vector2(0, 100))
+		this.instantiate(titleScreen, new Vector2(window.innerWidth/2, 100))
 		titleScreen.getComponent(TextLabel).text = "The Game"
-		let startButton = this.instantiate(new StartButtonGameObject(), new Vector2(10, 300))
+		titleScreen.getComponent(TextLabel).textAlign = "center"
+		let startButton = this.instantiate(new StartButtonGameObject(), new Vector2(window.innerWidth/2-150, 300))
 		let startButtonTop = new GameObject("StartBorderTop", [], "UI")
 		let startButtonBot = new GameObject("StartBorderBot", [], "UI")
 		let startButtonLeft = new GameObject("StartBorderLeft", [], "UI")
@@ -24,8 +25,9 @@ class MainMenu extends Scene{
 		startButtonRight.transform.setParent(startButton.transform)
 		let startButtonText = new GameObject("StartText", [], "UI")
 		startButtonText.addComponent(new TextLabel(), {fillStyle: "black", font:"30px Times"})
-		this.instantiate(startButtonText, new Vector2(115, 35))
+		this.instantiate(startButtonText, new Vector2(150, 35))
 		startButtonText.getComponent(TextLabel).text = "Start"
+		startButtonText.getComponent(TextLabel).textAlign = "center"
 		startButtonText.transform.setParent(startButton.transform)
 	}
 }

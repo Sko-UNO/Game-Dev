@@ -20,8 +20,9 @@ class LevelSelector extends Scene{
 		levelOneButtonRight.transform.setParent(levelOneButton.transform)
 		let levelOneButtonText = new GameObject("LevelOneText", [], "UI")
 		levelOneButtonText.addComponent(new TextLabel(), {fillStyle: "black", font:"30px Times"})
-		this.instantiate(levelOneButtonText, new Vector2(42, 58))
+		this.instantiate(levelOneButtonText, new Vector2(50, 58))
 		levelOneButtonText.getComponent(TextLabel).text = "1"
+		levelOneButtonText.getComponent(TextLabel).textAlign = "center"
 		levelOneButtonText.transform.setParent(levelOneButton.transform)
 	}
 }
