@@ -1,6 +1,9 @@
 class Level01 extends Scene{
 	constructor(){
 		super()
+		this.instantiate(new TimerGameObject(), new Vector2(20, 50))
+		this.instantiate(new MainGameObject(), new Vector2(-200, 700))
+		
 		this.instantiate(new GroundGameObject(), new Vector2(0, 800))
 		this.instantiate(new SplitterGameObject(), new Vector2(-25, 0))
 		let platform1 = this.instantiate(new PlatformGameObject(), new Vector2(-400, 600))

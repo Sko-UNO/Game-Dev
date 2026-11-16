@@ -9,5 +9,6 @@ class LevelButtonGameObject extends GameObject{
 		]})
 		this.addComponent(new Collider())
 		this.addComponent(new LevelButtonController())
+		
 	}
 }
