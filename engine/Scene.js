@@ -1,23 +1,23 @@
 class Scene{
 	gameObjects = []
 	
-	constructor(backgroundColor){
+	constructor(backgroundColor) {
 		let cameraGameObject = new GameObject("MainCamera", ["MainCamera"])
 		cameraGameObject.addComponent(new Camera())
 		this.instantiate(cameraGameObject)
-		if(backgroundColor){
+		if (backgroundColor) {
 			cameraGameObject.getComponent(Camera).backgroundColor = backgroundColor
 		}
 	}
 	
-	instantiate(gameObject, position = new Vector2(0,0), rotation = 0){
+	instantiate(gameObject, position = new Vector2(0,0), rotation = 0) {
 		this.gameObjects.push(gameObject)
 		gameObject.transform.position = position
 		gameObject.transform.rotation = rotation
 		return gameObject;
 	}
 	
-	start(){
+	start() {
 		for(const gameObject of this.gameObjects){
 			gameObject.start()
 		}
@@ -33,7 +33,7 @@ class Scene{
 		const collidable = GameObject.findGameObjectsByType(Collider)
 		
 		//Mouse
-		if(Input.mousePosition){
+		if(Input.mousePosition) {
 			let matrix = new DOMMatrix()
 			matrix.translateSelf(Engine.canvas.width/2, Engine.canvas.height/2)
 			if(Engine.cameraWidthInWorldSpace){

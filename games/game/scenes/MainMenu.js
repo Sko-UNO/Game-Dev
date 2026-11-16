@@ -29,5 +29,7 @@ class MainMenu extends Scene{
 		startButtonText.getComponent(TextLabel).text = "Start"
 		startButtonText.getComponent(TextLabel).textAlign = "center"
 		startButtonText.transform.setParent(startButton.transform)
+		
+		this.instantiate(new LevelControllerGameObject())
 	}
 }

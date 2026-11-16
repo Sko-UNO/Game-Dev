@@ -24,5 +24,7 @@ class LevelSelector extends Scene{
 		levelOneButtonText.getComponent(TextLabel).text = "1"
 		levelOneButtonText.getComponent(TextLabel).textAlign = "center"
 		levelOneButtonText.transform.setParent(levelOneButton.transform)
+		
+		this.instantiate(new LevelControllerGameObject())
 	}
 }

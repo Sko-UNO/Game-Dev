@@ -1,4 +1,5 @@
 class LevelButtonController extends Component{
+	chosenLevel = 0
 	hover = false
 	fixedUpdate(){
 		this.hover = false
