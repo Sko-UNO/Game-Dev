@@ -3,11 +3,15 @@ class Polygon extends Component {
 	fillStyle = "magenta"
 	points = []
 	
+	alpha = 1
+	
 	draw(ctx){
 		//let position = this.transform.position
 			    
 		//open and close with ctx.save and cx.restore
 		ctx.save()
+		
+		ctx.globalAlpha = this.alpha
 		   
 		   
 		//ctx.translate(position.x, position.y)
