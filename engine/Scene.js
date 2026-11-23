@@ -153,7 +153,7 @@ class Scene{
 		
 		
 		//UI
-		ctx.translate(0, Engine.letterBoxingHeight / 2)
+		//ctx.translate(0, Engine.letterBoxingHeight / 2)
 		for(const gameObject of this.gameObjects.filter(go=>go.layer == "UI")){
 			gameObject.draw(ctx)
 		}

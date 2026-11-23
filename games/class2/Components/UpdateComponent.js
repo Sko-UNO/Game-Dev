@@ -14,4 +14,8 @@ class UpdateComponent extends Component{
 		if(Input.keysDown.includes("ArrowDown"))
 			this.transform.position.y += Time.deltaTime * this.speed
 	}
+	
+	onCollisionStay(other, mtx){
+		SceneManager.nextScene = ClosingScene
+	}
 }
